@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>2048 - 심심풀이 퍼즐</title>
+
+  <link href="style/main.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="meta/apple-touch-icon.png">
+  <link rel="apple-touch-startup-image" href="meta/apple-touch-startup-image-640x1096.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)"> <!-- iPhone 5+ -->
+  <link rel="apple-touch-startup-image" href="meta/apple-touch-startup-image-640x920.png"  media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)"> <!-- iPhone, retina -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+</head>
+<body>
+  <div class="container">
+    <div class="heading">
+      <h1 class="title">2048</h1>
+      <div class="scores-container">
+        <div class="score-container">0</div>
+        <div class="best-container">0</div>
+      </div>
+    </div>
+
+    <div class="above-game">
+      <p class="game-intro"><strong>2048</strong>이 나올때까지 숫자를 합쳐 보세요!</p>
+	  <a class="restart-button">새 게임</a>
+    </div>
+
+    <div class="game-container">
+      <div class="game-message">
+        <p></p>
+        <div class="lower">
+	        <a class="keep-playing-button">계속 하기</a>
+          <a class="retry-button">다시 시도</a>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+      </div>
+
+      <div class="tile-container">
+
+      </div>
+    </div>
+
+    <p class="game-explanation">
+      <strong class="important">게임하는 법:</strong> <strong>폰이면 손가락으로 컴퓨터면 키보드의 화살표 키</strong>를 이용하여 타일을 옮기세요. 같은 숫자를 가진 타일은 <strong>하나로 합치세요!</strong> 그래서 "2048"까지 성공해 보세요! (아 전 성공했어요!)
+	  <br><br>
+	  <a href=../>이전으로</a>
+	  
+    </p>
+					<!-- 코스모스팜 소셜댓글 시작 -->
+						<script id="cosmosfarm-comments-script" type="text/javascript" src="https://plugin.cosmosfarm.com/comments.js"></script>
+						<div id="cosmosfarm-comments" data-plugin-id="1587846001610159" data-href="http://play.hanmesoft.com/html5game/2048" data-width="500" data-row="10"><a href="http://www.cosmosfarm.com/plugin/comments">코스모스팜 소셜댓글</a></div>
+					<!-- 코스모스팜 소셜댓글 종료 -->	
+	
+    <hr>
+    <p>
+    <strong class="important">공지:</strong> 공식 2048 사이트는 <a href="http://git.io/2048">http://git.io/2048</a>입니다. 이 사이트는 공식 2048 사이트를 번역하여 한글화하였습니다.
+    </p>
+    <hr>
+    <p>
+    Created by <a href="http://gabrielecirulli.com" target="_blank">Gabriele Cirulli.</a> Based on <a href="https://itunes.apple.com/us/app/1024!/id823499224" target="_blank">1024 by Veewo Studio</a> and conceptually similar to <a href="http://asherv.com/threes/" target="_blank">Threes by Asher Vollmer.</a>
+	Fonted by <a href=http://combinefonts.hanmesoft.com target=_new>CombineFonts</a>.
+	Modified and translated by <a href=http://www.hanmesoft.com target=_new>Hanmesoft Corporation</a>.
+    </p>
+  </div>
+
+  <script src="js/bind_polyfill.js"></script>
+  <script src="js/classlist_polyfill.js"></script>
+  <script src="js/animframe_polyfill.js"></script>
+  <script src="js/keyboard_input_manager.js"></script>
+  <script src="js/html_actuator.js"></script>
+  <script src="js/grid.js"></script>
+  <script src="js/tile.js"></script>
+  <script src="js/local_storage_manager.js"></script>
+  <script src="js/game_manager.js"></script>
+  <script src="js/application.js"></script>
+</body>
+</html>
