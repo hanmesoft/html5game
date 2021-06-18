@@ -1,0 +1,4 @@
+To install: copy sudoku.php and sudoku.php.data to the same dir in you web server document tree.
+
+IMPORTANT: 
+If your browser shows php source code instead of sudoku set parameter "short_open_tag" in php.ini "On"!!!
